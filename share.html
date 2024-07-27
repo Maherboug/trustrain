@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Trustrain</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+   
+
+   .container1 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.request-form {
+    text-align: center;
+}
+
+h1 {
+    color: #333333;
+}
+
+p {
+    color: #555555;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #333333;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Chrome, Safari, Edge */
+    margin: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+  </style>
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/log-removebg-preview.png" alt="" width="100" height="80">
+
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="service.html">Services <span class="sr-only">(current)</span> </a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="why.html">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+              </li>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- service section -->
+  <section class="service_section layout_padding">
+    <div class="service_container">
+        <div class="container1">
+            <div class="request-form">
+                <h1>Share Your Resources</h1>
+                <p>Fill out the form below to share your computing resources or datasets. Ensure that all information is accurate to help users find and utilize your resources effectively.</p>
+                
+                <form id="resourceForm">
+                    <label for="aptosWallet">Aptos Wallet Address:</label>
+                    <input type="text" id="aptosWallet" name="aptosWallet" placeholder="Enter Your Aptos Wallet Address" required>
+                    
+                    <label for="resourceCategory">Resource Category:</label>
+                    <select id="resourceCategory" name="resourceCategory" required>
+                        <option value="computing">Computing</option>
+                        <option value="dataset">Dataset</option>
+                    </select>
+                    
+                    <label for="resourceType">Resource Type:</label>
+                    <select id="resourceType" name="resourceType" required>
+                        <option value="gpu">GPU</option>
+                        <option value="cpu">CPU</option>
+                        <option value="collab">Google Colab</option>
+                        <option value="kaggle">Kaggle Kernel</option>
+                    </select>
+                    
+                    <label for="ram">RAM (in GB):</label>
+                    <input type="number" id="ram" name="ram" placeholder="Enter Amount of RAM" required>
+                    
+                    <label for="cache">Cache (in GB):</label>
+                    <input type="number" id="cache" name="cache" placeholder="Enter Amount of Cache" required>
+                    
+                    <label for="availableTime">Available Time (in hours per week):</label>
+                    <input type="number" id="availableTime" name="availableTime" placeholder="Enter Available Time" required>
+                    
+                    <label for="additionalInfo">Additional Information:</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Provide any additional details or notes here"></textarea>
+
+                    <button type="submit" class="btn1" onclick="addResource()">Share Resources</button>
+
+                </form>
+                <script>
+                  function addResource() {
+            // Get the form data
+            const userName = document.getElementById('userName').value;
+            const resourceType = document.getElementById('resourceType').value;
+            const resourceDetails = document.getElementById('resourceDetails').value;
+
+            // Create a new user card
+            const userCard = document.createElement('div');
+            userCard.classList.add('user-card');
+
+            userCard.innerHTML = `
+                <div class="user-icon">
+                    <img src="default-icon.png" alt="${userName}">
+                </div>
+                <div class="user-details">
+                    <h2>${userName}</h2>
+                    <ul class="resource-list">
+                        <li>
+                            <h3>Resource</h3>
+                            <p>Type: ${resourceType}</p>
+                            <p>Details: ${resourceDetails}</p>
+                            <div class="action-buttons">
+                                <button class="allocate-btn">Allocate</button>
+                                <button class="transfer-btn" onclick="showTransferPopup()">Transfer Tokens</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            `;
+
+            // Add the new card to the marketplace
+            document.getElementById('userList').appendChild(userCard);
+
+            // Clear the form
+            document.getElementById('shareForm').reset();
+        }
+
+        function showTransferPopup() {
+            document.getElementById('transferPopup').style.display = 'block';
+        }
+
+        function closeTransferPopup() {
+            document.getElementById('transferPopup').style.display = 'none';
+        }
+    </script>
+                </script>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+  <!-- end service section -->
+
+  <!-- info section -->
+
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
