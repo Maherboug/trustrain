@@ -1,0 +1,13 @@
+[package]
+name = "TrusTrain"
+version = "0.1.0"
+
+[dependencies]
+AptosFramework = { local = "C:/Users/LENOVO/Desktop/aptos-core-main/aptos-move/framework/aptos-framework" , rev="testnet" }
+
+
+[addresses]
+TrusTrain="0xfc83896de2f3a2d647f232f149f690cf3c1ac3137c0771df82cc6f04fa9c28c9"
+AddrDeploy="0x00bc116bd49438935e32f5b69422b1ca27543b09339f4d49cae315a59707efc5"
+aptos_framework = "0x1"
+move_stdlib = "0x1"
